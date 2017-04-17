@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*表示，在父元素filmBox下面的h3下面的第一个子节点*/
+        .filmBox>h3:first-child{
+            color: green;
+        }
+        /*这个选择器并不是找到h3中的最后一个，而是，需要做一个判断的，它先找到父元素的最后一个子节点，然后判断是不是h3，如果是，就选择，如果不是，就像没有选中一样*/
+
+        .filmBox>h3:last-child{
+            color: green;
+        }
+        /*这里就是找的h3里面的，然后，索引是从1 开始的*/
+        .filmBox>h3:nth-child(4){
+            background: indianred;
+        }
+        .filmBox>h3:nth-child(2n){
+            background: saddlebrown;
+        }
+        /*获取到最后一个满足条件的h3*/
+        .filmBox>h3:last-of-type{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+<div class='filmBox'>
+    <h3>北京遇上西雅图</h3>
+    <h3>小鬼当家</h3>
+    <h3>夏洛特烦恼</h3>
+    <h3>神犬小七</h3>
+    <h3>湄公河行动</h3>
+    <h2>建国大业</h2>
+</div>
+</body>
+</html>

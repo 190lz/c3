@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            position: relative;
+            transition: all 1s;
+        }
+        div::before{
+            content:'';
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: 1px solid green;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background: hotpink;
+        }
+        div::after{
+            content:'';
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: 1px solid orange;
+            top: 0px;
+            left: 0px;
+            background: saddlebrown;
+        }
+        div:hover{
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
