@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: seagreen;
+            margin: 50px auto;
+            border: 1px solid red;
+            /* 默认的设置 如果我们添加了 border属性 该容器的大小会发生改变
+				因为他要优先保证内部的内容所占区域 不变
+			 */
+
+            /*  box-sizing  如果不设置 默认的值 就是
+                content-box: 优先保证内容的大小 对盒子进行缩放;
+               border-box: 让 盒子 优先保证自己所占区域的大小,对内容进行压缩;
+            */
+            /*box-sizing: border-box;*/
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
