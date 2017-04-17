@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div[class^='icon-']{
+            /*bg层级更高*/
+            /*background: url('./sprites.png');*/
+            background-image: url('./sprites.png');
+            background-repeat:no-repeat;
+            background-color: gray;
+        }
+        .icon-car{
+            background-position: -185px -65px;
+            width: 51px;
+            height: 38px;
+        }
+        .icon-people{
+            background-position: -243px -65px;
+            width: 52px;
+            height: 39px;
+
+        }
+        .icon-house{
+            width: 48px;
+            height: 39px;
+            background-position: -64px -65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-car"></div>
+    <div class="icon-people"></div>
+    <div class="icon-house"></div>
+</body>
+</html>

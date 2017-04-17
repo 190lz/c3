@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /*处理兼容，就是在相应的属性前面加上浏览器的名字*/
+            /*-webkit-transition: all 1s;*/
+            /*-moz-transition: all 1s;*/
+            /*-ms-transition: all 2s;*/
+            /*-o-transition: all 1s;*/
+            /*transition: all 1s;*/
+            /*过渡属性，就是可以让一个东西展现出过渡的效果*/
+            transiton:all 1s;
+            -webkit-transition:all 1s;
+            -moz-transition:all 1s;
+            -o-transition:all 1s;
+            -ms-transition:all 1s;
+            transition:all 1s;
+        }
+        div:hover{
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

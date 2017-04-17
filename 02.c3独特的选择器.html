@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        li[type]{
+            border: 1px solid red;
+        }
+        li[type="abc"]{
+            background: pink;
+        }
+        /*满足两个条件，1.使用空格分隔的多个属性 2.其中包含了c7  ~=表示其中包含*/
+        li[type~='c7']{
+            background: green;
+        }
+        /* ^表示，以什么开头*/
+        li[color^='acc']{
+            background: deeppink;
+        }
+        /*以什么结尾的 $=*/
+        li[type$='c6']{
+            background: red;
+        }
+        /*其中包含c2*/
+        li[type*="c2"]{
+            background: #ffdbb6;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li type="abc1">999</li>
+    <li type="abc2">999</li>
+    <li type="abc3 c7">999</li>
+    <li type="abc4">999</li>
+    <li type="abc5">999</li>
+    <li type="abc6">999</li>
+    <li type="abc7" color="accaaaa">999</li>
+    <li type="abc8">999</li>
+</ul>
+</body>
+</html>
